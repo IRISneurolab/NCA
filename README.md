@@ -27,7 +27,7 @@ The framework operates through a two-stream pipeline:
 To ensure reproducibility and model compatibility, input data must follow these standards:
 
 * **MRI Segmentation:** Raw T1 scans must be processed using **FreeSurfer** (v6 recommended) to extract the standard `aseg` and `aparc` statistics.
-* **Feature Harmonization:** To mitigate site-related bias in multi-centric cohorts, we highly recommend harmonizing the morphometric data using the **[NOMIS (Neuroimaging Outcomes Multicenter International Standard)](https://git.valeria.science/medics/archives/github/nomis/)** pipeline. This ensures that the Brain Age predictions remain robust across different scanners and protocols.
+* **Feature Harmonization:** To mitigate site-related bias in multi-centric cohorts, we highly recommend harmonizing the morphometric data using the **[NOMIS (NOrmative Morphometry Image Statistics (https://git.valeria.science/medics/archives/github/nomis/)]** pipeline. This ensures that the Brain Age predictions remain robust across different scanners and protocols.
 
 ---
 
