@@ -26,7 +26,7 @@ The framework operates through a two-stream pipeline:
 
 To ensure reproducibility and model compatibility, input data must follow these standards:
 
-* **MRI Segmentation:** Raw T1 scans must be processed using **FreeSurfer** (v7.0+ recommended) to extract the standard `aseg` and `aparc` statistics.
+* **MRI Segmentation:** Raw T1 scans must be processed using **FreeSurfer** (v6 recommended) to extract the standard `aseg` and `aparc` statistics.
 * **Feature Harmonization:** To mitigate site-related bias in multi-centric cohorts, we highly recommend harmonizing the morphometric data using the **[NOMIS (Neuroimaging Outcomes Multicenter International Standard)](https://git.valeria.science/medics/archives/github/nomis/)** pipeline. This ensures that the Brain Age predictions remain robust across different scanners and protocols.
 
 ---
@@ -70,9 +70,7 @@ $$NCA_{Index} = (0.754 \times CA) + (0.246 \times BA)$$
 
 ## 🎓 Citation & Research
 
-If you use this framework in your research, please cite our method article:
-
-> **Roger, E. (2026).** *Anchoring Brain Age on Cognitive Performance: The Multimodal NeuroCognitive Age Framework.* University of Sherbrooke.
+If you use this framework in your research, please cite our method article
 
 ## 👤 Author
 
@@ -84,5 +82,6 @@ Faculty of Medicine and Health Sciences (FMSS)
 
 ## Acknowledgments
 
-We thank the **IRIS Neurolab** team and the **Centre de recherche sur le vieillissement (CdRV)** for their support in developing this framework.
+This work was supported by the Canadian Institutes of Health Research (CIHR); the Fonds de recherche du Québec – Santé (FRQS); the pancanadian network AGEWELL, the Research Center ong Aging (CdRV)**  and the Université de Sherbrooke.
+
 
