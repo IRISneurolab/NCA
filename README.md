@@ -71,7 +71,7 @@ $$NCA_{Index} = (0.754 \times CA) + (0.246 \times BA)$$
 
 **Elise Roger, PhD** Assistant Professor, Dept. of Medical Imaging and Radiation Sciences  
 Faculty of Medicine and Health Sciences (FMSS)  
-**University of Sherbrooke** *Researcher at CdRV | Member of RQRV* 📧 [elise.roger@usherbrooke.ca](mailto:elise.roger@usherbrooke.ca)
+**University of Sherbrooke** *Researcher at CdRV* 📧 [elise.roger@usherbrooke.ca](mailto:elise.roger@usherbrooke.ca)
 
 ---
 
