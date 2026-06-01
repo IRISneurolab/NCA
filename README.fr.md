@@ -68,12 +68,12 @@ $$NCA_{Index} = (0.754 \times CA) + (0.246 \times BA)$$
 
 ## 👤 Autrice
 
-**Elise Roger, PhD** — Professeure adjointe, Département d'imagerie médicale et de sciences de la radiation
+**Elise Roger, PhD** — Professeure adjointe, Département des sciences de l'imagerie médicale et des radiations
 Faculté de médecine et des sciences de la santé (FMSS)
-**Université de Sherbrooke** — *Chercheuse au CdRV | Membre du RQRV* 📧 [elise.roger@usherbrooke.ca](mailto:elise.roger@usherbrooke.ca)
+**Université de Sherbrooke** — *Chercheuse au CdRV* 📧 [elise.roger@usherbrooke.ca](mailto:elise.roger@usherbrooke.ca)
 
 ---
 
 ## Remerciements
 
-Nous remercions les Instituts de recherche en santé du Canada (IRSC), le Fonds de recherche du Québec - Santé (FRQS), le Centre de recherche sur le vieillissement (CdRV), et l'Université de Sherbrooke pour leur soutien dans le développement de cet outil.
+Nous remercions les Instituts de recherche en santé du Canada (IRSC), le Fonds de recherche du Québec - Santé (FRQS), le Centre de recherche sur le vieillissement (CdRV), et l'Université de Sherbrooke pour leur soutien dans le développement de l'outil.
