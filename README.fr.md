@@ -8,9 +8,7 @@
 
 ## Présentation
 
-Le **Framework Âge NeuroCognitif (NCA)** est un pipeline de biomarqueurs multimodal conçu pour quantifier les trajectoires individuelles de vieillissement en intégrant la neuro-imagerie structurelle (IRM) et la performance cognitive fonctionnelle.
-
-Contrairement aux modèles traditionnels d'« Âge Cérébral » (Brain Age), l'Indice NCA réconcilie l'intégrité structurelle du cerveau avec la réalité clinique en ancrant le score final sur la performance au **MoCA (Montreal Cognitive Assessment)**, via une fusion pondérée optimisée empiriquement.
+La **Boîte à outils de l'Âge NeuroCognitif (NCA)** est un pipeline de biomarqueurs multimodal conçu pour quantifier les trajectoires individuelles de vieillissement en intégrant la neuroimagerie structurelle (IRM) et la performance cognitive (fluence verbale sémantique et le Montreal Cognitive Assessment MoCA).
 
 ---
 
@@ -19,7 +17,7 @@ Contrairement aux modèles traditionnels d'« Âge Cérébral » (Brain Age), l'
 Le framework fonctionne selon un pipeline à deux flux :
 
 1.  **Flux structurel (Âge Cérébral — BA) :** exploite 625 caractéristiques morphométriques (volumes, surfaces et épaisseurs) extraites d'une IRM pondérée en T1.
-2.  **Flux fonctionnel (Âge Cognitif — CA) :** utilise la fluence sémantique et le niveau d'éducation, transformés via un pipeline Box-Cox spécifique.
+2.  **Flux fonctionnel (Âge Cognitif — CA) :** utilise la fluence verbale sémantique et le niveau d'éducation, transformés via un pipeline Box-Cox spécifique.
 3.  **Fusion multimodale :** synthétise les deux marqueurs en un unique **Indice NCA**.
 
 ### Exigences de prétraitement des données
@@ -68,12 +66,6 @@ $$NCA_{Index} = (0.754 \times CA) + (0.246 \times BA)$$
 * `nca_cognitive_pipeline.joblib` : modèle SVR pré-entraîné pour les caractéristiques cognitives.
 * `requirements.txt` : liste des paquets Python requis.
 
-## 🎓 Citation et recherche
-
-Si vous utilisez ce framework dans vos travaux, merci de citer notre article de méthode :
-
-> **Roger, E. (2026).** *Anchoring Brain Age on Cognitive Performance: The Multimodal NeuroCognitive Age Framework.* Université de Sherbrooke.
-
 ## 👤 Autrice
 
 **Elise Roger, PhD** — Professeure adjointe, Département d'imagerie médicale et de sciences de la radiation
@@ -84,4 +76,4 @@ Faculté de médecine et des sciences de la santé (FMSS)
 
 ## Remerciements
 
-Nous remercions l'équipe **IRIS Neurolab** et le **Centre de recherche sur le vieillissement (CdRV)** pour leur soutien dans le développement de ce framework.
+Nous remercions les Instituts de recherche en santé du Canada (IRSC), le Fonds de recherche du Québec - Santé (FRQS), le Centre de recherche sur le vieillissement (CdRV), et l'Université de Sherbrooke pour leur soutien dans le développement de cet outil.
