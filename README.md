@@ -9,7 +9,7 @@
 
 ## Overview
 
-The **NeuroCognitive Age (NCA) Framework** is a multimodal biomarker pipeline designed to quantify individual aging trajectories by integrating structural neuroimaging (MRI) and cognitive performance. 
+The **NeuroCognitive Age (NCA) Framework** is a multimodal biomarker pipeline designed to quantify individual aging trajectories by integrating structural neuroimaging (MRI) and cognitive performance (semantic verbal fluency and Montreal Cognitive Assessment MoCA). 
 
 ---
 
