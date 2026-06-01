@@ -9,9 +9,7 @@
 
 ## Overview
 
-The **NeuroCognitive Age (NCA) Framework** is a multimodal biomarker pipeline designed to quantify individual aging trajectories by integrating structural neuroimaging (MRI) and functional cognitive performance. 
-
-Unlike traditional "Brain Age" models, the NCA Index reconciles structural brain integrity with clinical reality by anchoring the final score on **MoCA (Montreal Cognitive Assessment)** performance using an empirically optimized weighted fusion.
+The **NeuroCognitive Age (NCA) Framework** is a multimodal biomarker pipeline designed to quantify individual aging trajectories by integrating structural neuroimaging (MRI) and cognitive performance. 
 
 ---
 
@@ -69,10 +67,6 @@ $$NCA_{Index} = (0.754 \times CA) + (0.246 \times BA)$$
 * `nca_cognitive_pipeline.joblib`: Pre-trained SVR model for cognitive features.
 * `requirements.txt`: List of required Python packages.
 
-## 🎓 Citation & Research
-
-If you use this framework in your research, please cite our method article
-
 ## 👤 Author
 
 **Elise Roger, PhD** Assistant Professor, Dept. of Medical Imaging and Radiation Sciences  
@@ -83,6 +77,6 @@ Faculty of Medicine and Health Sciences (FMSS)
 
 ## Acknowledgments
 
-This work was supported by the Canadian Institutes of Health Research (CIHR); the Fonds de recherche du Québec – Santé (FRQS); the pancanadian network AGEWELL, the Research Center ong Aging (CdRV)**  and the Université de Sherbrooke.
+This work was supported by the Canadian Institutes of Health Research (CIHR; the Fonds de recherche du Québec – Santé (FRQS); the pancanadian network AGEWELL, the Research Center ong Aging (CdRV)**  and the Université de Sherbrooke.
 
 
