@@ -17,7 +17,7 @@ The **NeuroCognitive Age (NCA) Framework** is a multimodal biomarker pipeline de
 
 The framework operates through a two-stream pipeline:
 
-1.  **Structural Stream (Brain Age - BA):** Leverages 625 morphometric features (volumes, surface areas, and thicknesses) extracted from T1-weighted MRI.
+1.  **Structural Stream (Brain Age - BA):** Leverages 624 morphometric features (volumes, surface areas, and thicknesses) extracted from T1-weighted MRI.
 2.  **Functional Stream (Cognitive Age - CA):** Utilizes semantic fluency and educational background, transformed via a specific Box-Cox pipeline.
 3.  **Multimodal Fusion:** Synthesizes both markers into a single **NCA Index**.
 
