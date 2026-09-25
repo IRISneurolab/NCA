@@ -25,7 +25,7 @@ Le framework fonctionne selon un pipeline à deux flux :
 Pour garantir la reproductibilité et la compatibilité avec les modèles, les données d'entrée doivent respecter ces standards :
 
 * **Segmentation IRM :** les scans T1 bruts doivent être traités avec **FreeSurfer** (v7.0+ recommandé) afin d'extraire les statistiques standard `aseg` et `aparc`.
-* **Harmonisation des caractéristiques :** pour atténuer les biais liés aux sites dans les cohortes multicentriques, nous recommandons fortement d'harmoniser les données morphométriques avec le pipeline **[NOMIS (Neuroimaging Outcomes Multicenter International Standard)](https://git.valeria.science/medics/archives/github/nomis/)**. Cela garantit que les prédictions d'Âge Cérébral restent robustes entre différents scanners et protocoles.
+* **Harmonisation des caractéristiques :** pour atténuer les biais liés aux sites dans les cohortes multicentriques, nous recommandons fortement d'harmoniser les données morphométriques avec le pipeline NOMIS (NOrmative Morphometry Image Statistics) [https://git.valeria.science/medics/archives/github/nomis/]. Cela garantit que les prédictions d'Âge Cérébral restent robustes entre différents scanners et protocoles.
 
 ---
 
@@ -51,7 +51,7 @@ python predict_nca.py
 
 ## 🧠 Théorie de l'intégration multimodale
 
-Le framework NCA met en œuvre un **modèle de moyenne pondérée** pour générer l'indice final. Les poids ont été identifiés afin de maximiser la corrélation avec le statut neurocognitif global :
+Le pipeline NCA met en œuvre un **modèle de moyenne pondérée** pour générer l'indice final. Les poids ont été identifiés afin de maximiser la corrélation avec le statut neurocognitif global :
 
 $$NCA_{Index} = (0.754 \times CA) + (0.246 \times BA)$$
 
@@ -61,19 +61,27 @@ $$NCA_{Index} = (0.754 \times CA) + (0.246 \times BA)$$
 
 ## 📂 Structure du dépôt
 
-* `predict_nca.py` : script principal d'inférence pour le traitement par lots.
-* `nca_brain_pipeline.joblib` : modèle RidgeCV pré-entraîné pour les caractéristiques IRM.
-* `nca_cognitive_pipeline.joblib` : modèle SVR pré-entraîné pour les caractéristiques cognitives.
-* `requirements.txt` : liste des paquets Python requis.
+**Fichiers d'inférence principaux (Racine) :**
+* 📄 `predict_nca.py` : Script d'inférence principal pour le traitement par lots.
+* 📄 `nca_brain_pipeline.joblib` : Modèle RidgeCV pré-entraîné pour les caractéristiques IRM.
+* 📄 `nca_cognitive_pipeline.joblib` : Modèle SVR pré-entraîné pour les caractéristiques cognitives.
+* 📄 `requirements.txt` : Liste des packages Python requis.
 
-## 👤 Autrice
+**Dossier de développement et de reproductibilité :**
+* 📂 `development_workflow/` (dossier) : Scripts appuyant le développement, le benchmarking et l'évaluation statistique des modèles, incluant l'entraînement de BA et CA, la validation croisée imbriquée, la comparaison des modèles de fusion, les analyses *out-of-fold*, les fichiers de configuration et un *smoke test* sur données synthétiques. Ce workflow est fourni à des fins de reproductibilité méthodologique et n'est pas requis pour estimer le NCA à l'aide des modèles pré-entraînés.
 
-**Elise Roger, PhD** — Professeure adjointe, Département des sciences de l'imagerie médicale et des radiations
-Faculté de médecine et des sciences de la santé (FMSS)
-**Université de Sherbrooke** — *Chercheuse au CdRV* 📧 [elise.roger@usherbrooke.ca](mailto:elise.roger@usherbrooke.ca)
+---
+
+## 👤 Auteure
+
+**Élise Roger, PhD** <br>
+Professeure adjointe, Dép. d'imagerie médicale et de sciences des radiations <br>
+Faculté de médecine et des sciences de la santé (FMSS), **Université de Sherbrooke** <br>
+Chercheuse au Centre de recherche sur le vieillissement (CdRV) <br>
+📧 [elise.roger@usherbrooke.ca](mailto:elise.roger@usherbrooke.ca)
 
 ---
 
 ## Remerciements
 
-Nous remercions les Instituts de recherche en santé du Canada (IRSC), le Fonds de recherche du Québec - Santé (FRQS), le Centre de recherche sur le vieillissement (CdRV), et l'Université de Sherbrooke pour leur soutien dans le développement de l'outil.
+Ce travail a été soutenu par les Instituts de recherche en santé du Canada (IRSC), le Fonds de recherche du Québec – Santé (FRQS), le réseau pancanadien AGE-WELL, le Centre de recherche sur le vieillissement (CdRV) et l'Université de Sherbrooke.
